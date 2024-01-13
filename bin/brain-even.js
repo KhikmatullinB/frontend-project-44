@@ -22,12 +22,8 @@ for (let i = 0; i < rounds; i += 1) {
     if (userAnswer !== correctAnswer) {
         console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'.`);
         console.log(`Let's try again, ${userName}`);
-        return;
     } 
-    else if (userAnswer === correctAnswer) {
     console.log('Correct!');
-    }
 }; 
 console.log(`Congratulations, ${userName}!`);
-return;
 
