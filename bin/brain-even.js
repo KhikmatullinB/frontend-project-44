@@ -9,23 +9,21 @@ const randomNumber = (min, max) => Math.floor(Math.random() * (max - min)) + min
 console.log(brainEvenRules);
 
 const numQuestion = () => {
-    const tempNumber = randomNumber(1, 10);
-    console.log('Question: ', tempNumber);
-    return tempNumber;
+  const tempNumber = randomNumber(1, 10);
+  console.log('Question: ', tempNumber);
+  return tempNumber;
 };
 
-for (let i = 0; i !== rounds; i += 1) { 
-    const tempNumber = numQuestion();
-    const correctAnswer = tempNumber % 2 ? 'no' : 'yes';
-    const userAnswer = readlineSync.question('Your answer: ');
+for (let i = 0; i !== rounds; i += 1) {
+  const tempNumber = numQuestion();
+  const correctAnswer = tempNumber % 2 ? 'no' : 'yes';
+  const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer !== correctAnswer) {
-        console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'.`);
-        console.log(`Let's try again, ${userName}`);
-    } if (userAnswer == correctAnswer) {
-        console.log('Correct!');
-    }
-}; 
-console.log(`Congratulations, ${userName}!`);
-
-
+  if (userAnswer !== correctAnswer) {
+    console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'.`);
+    console.log(`Let's try again, ${userName}`);
+    break;
+  } if (userAnswer === correctAnswer) {
+    console.log('Correct!');
+  }
+} console.log(`Congratulations, ${userName}!`);
