@@ -13,17 +13,20 @@ const numQuestion = () => {
   console.log('Question: ', tempNumber);
   return tempNumber;
 };
-
+let roundsCount = true;
 for (let i = 0; i !== rounds; i += 1) {
   const tempNumber = numQuestion();
   const correctAnswer = tempNumber % 2 ? 'no' : 'yes';
   const userAnswer = readlineSync.question('Your answer: ');
 
   if (userAnswer !== correctAnswer) {
-    console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'.`);
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     console.log(`Let's try again, ${userName}`);
+    roundsCount = false;
     break;
   } if (userAnswer === correctAnswer) {
     console.log('Correct!');
   }
-} console.log(`Congratulations, ${userName}!`);
+} if (roundsCount === true) {
+  console.log(`Congratulations, ${userName}!`);
+}
