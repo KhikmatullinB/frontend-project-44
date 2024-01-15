@@ -9,7 +9,7 @@ const generateRounds = () => {
   const tempNumber = randomNumber(1, 10);
   const question = `${tempNumber}`;
   const correctAnswer = isEven(tempNumber) ? 'yes' : 'no';
-  return [correctAnswer, question];
+  return [question, correctAnswer];
 };
 const brainEvenGame = () => gameProcess(gameRules, generateRounds);
 

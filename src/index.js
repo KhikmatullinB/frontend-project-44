@@ -10,7 +10,7 @@ const gameProcess = (gameRules, generateRounds) => {
 
   let roundsCount = true;
   for (let i = 0; i !== rounds; i += 1) {
-    const [correctAnswer, question] = generateRounds();
+    const [question, correctAnswer] = generateRounds();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
