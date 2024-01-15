@@ -8,3 +8,5 @@ lint: #проверка строк
 	npx eslint .
 brain-even: #запуск игры brain-even
 	node bin/brain-even.js
+brain-calc: #запуск игры brain-calc
+	node bin/brain-calc.js
