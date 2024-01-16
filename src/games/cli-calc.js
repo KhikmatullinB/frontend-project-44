@@ -13,7 +13,7 @@ const expression = (num1, operand, num2) => {
     case '*':
       return num1 * num2;
     default:
-      null;
+      return null;
   }
 };
 const generateRounds = () => {
