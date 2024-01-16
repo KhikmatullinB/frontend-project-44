@@ -10,3 +10,9 @@ Asciinema for brain-calc game
 
 Asciinema for brain-gcd game
 [![asciicast](https://asciinema.org/a/631376.svg)](https://asciinema.org/a/631376)
+
+Asciinema for brain-progression game
+[![asciicast](https://asciinema.org/a/uGjDnNU6qt4NUSRm7h4CNay9E.svg)](https://asciinema.org/a/uGjDnNU6qt4NUSRm7h4CNay9E)
+
+Asciinema for brain-prime game
+[![asciicast](https://asciinema.org/a/631537.svg)](https://asciinema.org/a/631537)
