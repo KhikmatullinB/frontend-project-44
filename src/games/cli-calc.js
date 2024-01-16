@@ -20,7 +20,7 @@ const generateRounds = () => {
   const num1 = randomNumber(1, 10);
   const num2 = randomNumber(1, 10);
   const randomOperand = operands[randomNumber(0, operands.length - 1)];
-  const question = `${num1}${randomOperand}${num2}`;
+  const question = `${num1} ${randomOperand} ${num2}`;
   const correctAnswer = `${expression(num1, randomOperand, num2)}`;
   return [question, correctAnswer];
 };
