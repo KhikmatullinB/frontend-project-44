@@ -3,9 +3,9 @@ import gameProcess from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
-const generateProgression = (firstItem, step, Length) => {
+const generateProgression = (firstItem, step, length) => {
   const array = [];
-  for (let i = 0; i < Length; i += 1) {
+  for (let i = 0; i < length; i += 1) {
     const result = (firstItem + (step * i));
     array.push(result);
   }
