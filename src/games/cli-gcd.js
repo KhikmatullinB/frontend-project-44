@@ -1,5 +1,5 @@
 import randomNumber from '../randomNumber.js';
-import gameProcess from '../index.js';
+import processGame from '../index.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 const gcd = (number1, number2) => {
@@ -16,6 +16,6 @@ const generateRounds = () => {
   const correctAnswer = `${gcd(num1, num2)}`;
   return [question, correctAnswer];
 };
-const brainCalcGame = () => gameProcess(gameRules, generateRounds);
+const brainCalcGame = () => processGame(gameRules, generateRounds);
 
 export default brainCalcGame;

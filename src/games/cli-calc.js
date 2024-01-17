@@ -1,4 +1,4 @@
-import gameProcess from '../index.js';
+import processGame from '../index.js';
 import randomNumber from '../randomNumber.js';
 
 const gameRules = 'What is the result of the expression?';
@@ -24,6 +24,6 @@ const generateRounds = () => {
   const correctAnswer = `${expression(num1, randomOperand, num2)}`;
   return [question, correctAnswer];
 };
-const brainCalcGame = () => gameProcess(gameRules, generateRounds);
+const brainCalcGame = () => processGame(gameRules, generateRounds);
 
 export default brainCalcGame;

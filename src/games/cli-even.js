@@ -1,5 +1,5 @@
 import randomNumber from '../randomNumber.js';
-import gameProcess from '../index.js';
+import processGame from '../index.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -11,6 +11,6 @@ const generateRounds = () => {
   const correctAnswer = isEven(tempNumber) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
-const brainEvenGame = () => gameProcess(gameRules, generateRounds);
+const brainEvenGame = () => processGame(gameRules, generateRounds);
 
 export default brainEvenGame;

@@ -1,5 +1,5 @@
 import randomNumber from '../randomNumber.js';
-import gameProcess from '../index.js';
+import processGame from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
@@ -23,6 +23,6 @@ function generateRounds() {
   return [question, correctAnswer];
 }
 
-const progressionGame = () => gameProcess(gameRules, generateRounds);
+const progressionGame = () => processGame(gameRules, generateRounds);
 
 export default progressionGame;
